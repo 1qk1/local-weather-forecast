@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Local Weather Forecast</title>
+<meta name="author" content="Panagiotis Skarlas">
+<meta name="description" content="Local Weather Forecast App 
+using your geographical location to find the weather for the next hours or days 
+and displaying it in an elegant and minimalistic style.">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	
+<div class="container">
+	<div class="row">
+	<div class="col-md-8 offset-md-2" id="topweather">
+		<div class="row">
+
+		<div class="col" id="topwea">
+		<h1><a href="#"><span id="currentTemp"></span></a></h1>
+		<h4><span id="locationName"></span>, <span id="countryName"></span></h4>
+		<h5 class="display-5"><span id="currentWeather"></span></h5>
+	</div>
+
+
+		<div class="col none leftborder" id="togglenone">
+			<ul>
+				<li>Max temp: <span id="maxTemp"></span></li>
+				<li>Min temp: <span id="minTemp"></span></li>
+				<li>Average temp: <span id="avgTemp"></span></li>
+				<li>Feels like: <span id="feelsLike"></span></li>
+				<li>Humidity: <span id="humidity"></span></li>
+				<li>Wind speed: <span id="windSpeed"></span>
+				<li>Wind direction: <span id="windDirection"></span></li>
+				<li>Sunrise: <span id="sunrise"></span></li>
+				<li>Sunset: <span id="sunset"></span></li>
+				<li>Visibility: <span id="visibility"></span></li>
+			</ul>
+			</div>
+
+		</div><!--row div-->
+
+
+
+		</div><!-- top weather div-->
+	
+
+	</div><!-- row div-->
+<button id="advancedButton" class="btn btn-light">show more details</button>
+
+	<div id="bottomweather">
+		<nav class="nav nav-tabs" id="botweather" role="tablist">
+			<a class="nav-item nav-link active" id="nav-hourly-tab" data-toggle="tab" href="#nav-hourly" role="tab" aria-controls="nav-hourly" aria-selected="true">Hourly forecast</a>
+
+			<a class="nav-item nav-link" id="nav-daily-tab" data-toggle="tab" href="#nav-daily" role="tab" aria-controls="nav-daily" aria-selected="false">Daily forecast</a>
+
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-hourly" role="tabpanel" aria-labelledby="nav-hourly-tab">
+				<div class="row">
+				<div class="col" id="hourly0"></div>
+				<div class="col" id="hourly1"></div>
+				<div class="col" id="hourly2"></div>
+				<div class="col" id="hourly3"></div>
+				<div class="col" id="hourly4"></div>
+				<div class="col" id="hourly5"></div>
+			</div>
+			</div>
+			<div class="tab-pane fade" id="nav-daily" role="tabpanel" aria-labelledby="nav-daily-tab">
+				<div class="row">
+				<div class="col"><span id="daily0"></span></div>
+				<div class="col"><span id="daily1"></span></div>
+				<div class="col"><span id="daily2"></span></div>
+				<div class="col"><span id="daily3"></span></div>
+				<div class="col"><span id="daily4"></span></div>
+				<div class="col"><span id="daily5"></span></div>
+			</div>
+			</div>
+
+
+
+		</div>
+
+
+	</div><!--bottom weather div-->
+
+</div><!--container div-->
+<footer class="footer">
+		<a href="https://twitter.com/qktweets" target="_blank"><img class="twitterimg" src="https://dl.dropboxusercontent.com/s/cwnb0jixx1vsxi7/Twitter-256.png"></a>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

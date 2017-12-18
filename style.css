@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+*{
+	/*border: 1px solid white;*/
+	color:white;
+	align-items: center;
+	text-align: center;
+	font-family: Roboto, "MS Sans Serif";
+	font-weight: 300;
+}
+
+body{
+	margin-top: 2em;
+	background-color: #161616 !important;
+}
+
+ul li{
+	position: relative;
+	list-style: none;
+	font-size: 1.25em;
+	width: 100%;
+	margin: 0.2em 0px;
+	text-align: left;
+	display:inline-block;
+}
+.leftborder{
+	border-left: 1px white solid;
+}
+.leftborder span{
+	float: right;
+}
+hr{
+	border-color: white;
+	display: block;
+	margin-top:40px;
+}
+button{
+	float: right;
+}
+#bottomweather{
+	margin-top: 4em;
+}
+button{
+	display: block;
+}
+img{
+	display: inline-block;
+}
+.none{
+	display: none;
+}
+#avgTemp{
+	float:right;
+}
+a{
+	color: white;
+}
+a:hover{
+	color: white;
+	text-decoration: none;
+}
+h4{
+	font-size: 2.25em;
+}
+h1{
+	font-size: 4em;
+}
+img{
+	width: 6em;
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+p{
+	margin-bottom: 0px;
+}
+.inline{
+	display: inline-block;
+}
+.none span{
+	float:right;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #202020;
+	height: 36px; 
+}
+.twitterimg{
+	width: 36px;
+}
+#nav-tabContent{
+	margin-bottom: 4em;
+}
